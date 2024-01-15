@@ -4,7 +4,6 @@ body {
   padding: 0 4%;
   box-sizing: border-box;
   height: 100vh;
-  background-image: url("/public/pics/bg.jpg");
   background-position: center;
   background-size: cover;
   font-family: "Belanosima", sans-serif;
@@ -12,11 +11,12 @@ body {
 }
 
 .nav {
-  height: 3.8rem;
+  height: 3.3rem;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .nav ul {
   display: flex;
@@ -52,6 +52,7 @@ body {
   }
   .nav {
     width: 80vw;
+    box-shadow: none;
   }
   ul {
     gap: 0.5rem;
@@ -67,6 +68,18 @@ body {
   height: 85vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.home .img {
+  background-image: url("/public/pics/fun.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.home .txt .txt_t {
+  background-image: url("/public/pics/bg1.jpg");
+  border-radius: 41% 59% 74% 26%/13% 52% 48% 87%;
 }
 .home .txt .txt_t h1 {
   font-size: 2.5rem;
@@ -133,12 +146,6 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  .img {
-    background-image: url("/public/pics/fun.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
   .txt {
     background-image: url("/public/pics/bg1.jpg");
     border-radius: 10rem;
@@ -156,7 +163,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: none;
 }
